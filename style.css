@@ -1,0 +1,103 @@
+:root {
+    --primary-dark: #222831;
+    --primary-light: #EEEEEE;
+    --primary-grey: #393E46;
+    --primary-cyan: #00ADB5;
+}
+
+body {
+    background-color: var(--primary-light);
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-grey);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: thick solid var(--primary-grey);
+    margin: 0;
+}
+
+header>h1{
+    color: var(--primary-grey);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#displayScore {
+    flex: 1 1 auto;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+#result {
+    align-self: center;
+}
+
+.player {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+}
+
+.player>h3 {
+    margin: 3px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 1%;
+}
+
+.choice {
+    padding: 1%;
+    max-width: 10%;
+    flex: 1 1 auto;
+    border-width: 0px;
+    border-radius: 10%;
+}
+
+.choice > img {
+    max-width: 100%;
+    max-height: auto;
+    filter: invert(23%) sepia(19%) saturate(310%) hue-rotate(178deg) brightness(97%) contrast(95%);
+}
+
+.choice:hover {
+    box-shadow: 0 5px 15px var(--primary-dark);
+}
+
+#playerChoice, #computerChoice {
+    max-width: 80%;
+    transform: rotate(45deg);
+}
+
+#computerChoice {
+    transform: scaleX(-1) rotate(45deg);
+}
+
+.image {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.image>img {
+    filter: invert(23%) sepia(19%) saturate(310%) hue-rotate(178deg) brightness(97%) contrast(95%);
+}

@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
+    <link rel='stylesheet' href="style.css" />
+    <script defer src="src.js"></script>
 </head>
 <body>
-    <script src="src.js"></script>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <div id='display'>
+            <h2 id='result'>Let's Play!</h2>
+            <div id='displayScore'>
+                <div class='player'>
+                    <h3>Player: <span id='playerScore'>0</span></h3>
+                    <div class='image'>
+                        <img id='playerChoice' src="images/rock.svg">
+                    </div>
+                </div>
+                <div class='player'>
+                    <h3>Computer: <span id='computerScore'>0</span></h3>
+                    <div class='image'>
+                        <img id='computerChoice' src="images/rock.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='buttons'>
+            <button id='rock' class='choice'><img src="images/rock.svg" alt='rock'></button>
+            <button id='paper' class='choice'><img src="Images/paper.svg" alt='paper'></button>
+            <button id='scissors' class='choice'><img src="images/scissors.svg" alt='scissors'></button>
+        </div>
+    </main>
+
 </body>
 </html>
