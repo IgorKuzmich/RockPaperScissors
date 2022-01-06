@@ -1,3 +1,6 @@
 # Rock Papers Scissors
 
-Game following The Odin Project Tutorial
+**Learning Web Dev**
+- Javascript
+- HTML
+- CSS
